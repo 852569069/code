@@ -18,4 +18,6 @@
 
 ## 预测示例：
  
-
+ 在测试集上的准确率达到100%
+ 
+![Image text](https://github.com/852569069/code/blob/master/paper%20data/%E5%A4%8D%E6%9D%82%E6%A0%B7%E6%9C%AC/images/%E5%9B%BE%E7%89%873.png)

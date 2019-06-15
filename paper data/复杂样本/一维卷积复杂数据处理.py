@@ -3,28 +3,6 @@ import os
 import matplotlib.pyplot as plt
 import tensorflow as tf
 path=u'D:\BaiduYunDownload\paper data'
-def file_maker(path):
-    """
-    :arg:create simulation data of raman and save as .npy
-    :param path:the path of raman file
-    :return:
-    """
-    root=os.listdir(path)
-    all_path=[os.path.join(path,i) for i in root]
-    for j,i in enumerate(all_path):
-        array=np.load(os.path.join(i,'array_all.npy'))[0]
-        filename = str(i).split('\\')[-1]
-        if not os.path.exists('./%s' % filename):
-            os.makedirs('./%s' % filename)
-        for l in range(100):
-            new_array=array+np.random.rand(len(array))*100
-            # np.save('./%s'%filename+'/_%d'%l,new_array)
-        pos='33%d'%(j+1)
-        plt.subplot(np.int32(pos))
-        plt.plot(range(len(array)),array,)
-        plt.title(str(filename))
-        print(filename)
-    plt.show()
 
 def creat_data(path):
     all_path=os.listdir(path)
